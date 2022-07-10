@@ -11,7 +11,7 @@ def main():
     with st.form(key='form', clear_on_submit=True):
         st.header("Isi Biodata Kamu")
         nama_tamu = st.text_input('Masukkan Nama Lengkap (Wajib)')
-        tgl_lahir_tamu = st.date_input('Pilih Tanggal Lahir', min_value=datetime(1800,12,12), max_value=None)
+        tgl_lahir_tamu = st.date_input('Pilih Tanggal Lahir', min_value=datetime(1945,12,12), max_value=datetime(2022,12,12)
         alamat_tamu = st.text_input('Alamat')
         gambar_tamu = st.camera_input('Foto Kamu')
         submit_button = st.form_submit_button('Cari Jodohmu!')
